@@ -15,6 +15,9 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
+import Image from 'next/image'; // Asegúrate de importar Image de la manera correcta
+
+import theCleanGardenImage from '@/images/logos/theCleanGarden.jpg';
 
 function MobileNavLink({
   href,
@@ -34,7 +37,7 @@ function MobileNavIcon({ open }: { open: boolean }) {
   return (
     <svg
       aria-hidden="true"
-      className="h-3.5 w-3.5 overflow-visible stroke-slate-700"
+      className="h-4 w-4 overflow-visible stroke-green-700"
       fill="none"
       strokeWidth={2}
       strokeLinecap="round"
@@ -75,7 +78,7 @@ function MobileNavigation() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <PopoverOverlay className="fixed inset-0 bg-slate-300/50" />
+          <PopoverOverlay className="fixed inset-0 bg-green-400/50" />
         </TransitionChild>
         <TransitionChild
           enter="duration-150 ease-out"
@@ -85,12 +88,12 @@ function MobileNavigation() {
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-          <PopoverPanel className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5">
-            <MobileNavLink href="#features">Hola</MobileNavLink>
-            <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
-            <MobileNavLink href="#pricing">Pricing</MobileNavLink>
-            <hr className="m-2 border-slate-300/40" />
-            <MobileNavLink href="/login">Sign in</MobileNavLink>
+          <PopoverPanel className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-green p-4 text-lg tracking-tight text-green-600 shadow-xl ring-1 ring-green-500/90">
+            <MobileNavLink href="#features">Menu</MobileNavLink>
+            <MobileNavLink href="#testimonials">Nosotros</MobileNavLink>
+            <MobileNavLink href="#pricing">Preguntas frecuentes</MobileNavLink>
+            <hr className="m-2 border-green-500/70" />
+            <MobileNavLink href="/login">Contacto</MobileNavLink>
           </PopoverPanel>
         </TransitionChild>
       </Transition>
@@ -104,22 +107,20 @@ export function Header() {
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
-            <Link href="#" aria-label="Home">
-              <Logo className="h-10 w-auto" />
-            </Link>
+          <Link href="#" aria-label="Home">
+          <Image src={theCleanGardenImage} alt="Descripción de la imagen" width={120} height={80} />
+    </Link>
             <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#features">Features</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
+              <NavLink href="#features">Menu</NavLink>
+              <NavLink href="#testimonials">Nosotros</NavLink>
+              <NavLink href="#pricing">Preguntas frecuentes</NavLink>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
-            <div className="hidden md:block">
-              <NavLink href="/login">Sign in</NavLink>
-            </div>
-            <Button href="/register" color="blue">
+           
+            <Button href="/login" className='bg-green-700'>
               <span>
-                Get started <span className="hidden lg:inline">today</span>
+                Contacto
               </span>
             </Button>
             <div className="-mr-1 md:hidden">
