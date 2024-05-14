@@ -78,7 +78,7 @@ function MobileNavigation() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <PopoverOverlay className="fixed inset-0 bg-green-400/50" />
+          <PopoverOverlay className="fixed inset-0 bg-green-500/50" />
         </TransitionChild>
         <TransitionChild
           enter="duration-150 ease-out"
@@ -118,7 +118,7 @@ export function Header() {
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
            
-            <Button href="/login" className='bg-green-700'>
+            <Button href="/register" className='bg-green-700'>
               <span>
                 Contacto
               </span>
