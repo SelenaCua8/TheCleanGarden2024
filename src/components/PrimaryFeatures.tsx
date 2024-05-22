@@ -1,40 +1,52 @@
 'use client'
-
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from 'clsx'
-
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-features.jpg'
+import backgroundImage from '@/images/background-featuress.jpg'
 import screenshotExpenses from '@/images/screenshots/expenses.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
+
 import screenshotReporting from '@/images/screenshots/reporting.png'
 import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import politicasCalidad from '@/images/screenshots/politicaCalidadAmbiente.jpg'
+import logoIso from '@/images/screenshots/logoIso.jpg'
 
 const features = [
   {
-    title: 'Payroll',
+    title: 'Políticas de calidad y ambiente',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
-    image: screenshotPayroll,
+      "Las Políticas de Calidad y de Medio Ambiente fijan como objetivos prioritarios la mejora continua de productos y servicios, mediante una gestión óptima de los recursos técnicos y humanos a la vez que la protección del medio ambiente, evitando en la medida de lo posible los impactos ambientales significativos y mejorando estos aspectos de forma continuada. Estas proporcionan un marco de referencia para establecer y revisar los objetivos de la empresa." ,
+    image: politicasCalidad,
   },
   {
-    title: 'Claim expenses',
+    title: 'Normas de certificación',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
-    image: screenshotExpenses,
+      "Normas ISO 9001:2015 y 14001:2015",
+    image: logoIso,
   },
   {
-    title: 'VAT handling',
+    title: 'Capacitaciones',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
+      "Dedicamos especial atención a la formación de todo nuestro personal en lo pertinente al manejo de maquinarias, procedimientos de limpieza, uso eficiente de los recursos, medidas de seguridad y prevención de accidentes.",
     image: screenshotVatReturns,
   },
   {
-    title: 'Reporting',
+    title: 'Equipamiento',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
+      'Disponemos de un completo parque de vehículos y maquinaria que nos permiten ejecutar las tareas en forma eficiente y segura.',
+    image: screenshotReporting,
+  },
+  {
+    title: 'Control',
+    description:
+      'Inspeccionamos regularmente las obras para garantizar el cumplimiento de los planes de trabajo propuestos, medir la calidad del servicio percibida por el cliente e implementar acciones correctivas, en caso de necesidad.',
+    image: screenshotReporting,
+  },
+  {
+    title: 'Flexibilidad',
+    description:
+      'Diseñamos planes de trabajos personalizados para dar solución a las necesidades específicas de cada cliente.',
     image: screenshotReporting,
   },
 ]
@@ -76,12 +88,9 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+            Por que elegirnos
           </h2>
-          <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
-          </p>
+          
         </div>
         <TabGroup
           className="mt-16 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"

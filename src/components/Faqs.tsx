@@ -88,7 +88,7 @@ export function Faqs() {
   Preguntas frecuentes
 </h2>
 <p className="mt-4 text-lg tracking-tight text-white">
-  Si no puede encontrar lo que busca, envíe un correo electrónico a nuestro equipo de soporte y, si tiene suerte, alguien se comunicará con usted.
+  Si no puede encontrar lo que busca, envíe un correo electrónico a nuestro equipo de soporte y, alguien se comunicará con usted.
 </p>
         </div>
         <ul
