@@ -5,12 +5,13 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-featuress.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
+import equipamiento from '@/images/screenshots/equipamiento.jpg'
 
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
+import flexibilidad from '@/images/screenshots/flexibilidad.jpg'
+import capacitaciones from '@/images/screenshots/capacitaciones.jpg'
 import politicasCalidad from '@/images/screenshots/politicaCalidadAmbiente.jpg'
 import logoIso from '@/images/screenshots/logoIso.jpg'
+import control from '@/images/screenshots/control.jpg'
 
 const features = [
   {
@@ -29,25 +30,25 @@ const features = [
     title: 'Capacitaciones',
     description:
       "Dedicamos especial atención a la formación de todo nuestro personal en lo pertinente al manejo de maquinarias, procedimientos de limpieza, uso eficiente de los recursos, medidas de seguridad y prevención de accidentes.",
-    image: screenshotVatReturns,
+    image: capacitaciones,
   },
   {
     title: 'Equipamiento',
     description:
       'Disponemos de un completo parque de vehículos y maquinaria que nos permiten ejecutar las tareas en forma eficiente y segura.',
-    image: screenshotReporting,
+    image: equipamiento,
   },
   {
     title: 'Control',
     description:
       'Inspeccionamos regularmente las obras para garantizar el cumplimiento de los planes de trabajo propuestos, medir la calidad del servicio percibida por el cliente e implementar acciones correctivas, en caso de necesidad.',
-    image: screenshotReporting,
+    image: control,
   },
   {
     title: 'Flexibilidad',
     description:
       'Diseñamos planes de trabajos personalizados para dar solución a las necesidades específicas de cada cliente.',
-    image: screenshotReporting,
+    image: flexibilidad,
   },
 ]
 
