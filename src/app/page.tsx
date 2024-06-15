@@ -20,7 +20,7 @@ export default function Home() {
         <PrimaryFeatures />
         <FourthFeatures />
         <SecondaryFeatures />
-        <ThirdFeatures />
+       
         
         <Faqs />
       </main>

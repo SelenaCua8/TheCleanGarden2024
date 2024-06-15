@@ -211,7 +211,7 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            ¿Quiénes somos?
+            ¿Qué hacemos?
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
             Somos una empresa con más de 20 años de experiencia orientados a dar soluciones integrales para espacios verdes de mediana y gran escala en espacios públicos, empresas o particulares. <br>
