@@ -68,7 +68,7 @@ const features: Array<Feature> = [
     summary:
       'Dedicados al mantenimiento de cada espacio verde.',
     description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
+      'Somos una de las empresas que se ocupa de los parques verdes de la ciudad Autónoma de Buenos Aires y más.',
     image: podaDeArboles,
     icon: function ContactsIcon() {
       return (
@@ -214,9 +214,7 @@ export function SecondaryFeatures() {
             ¿Qué hacemos?
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Somos una empresa con más de 20 años de experiencia orientados a dar soluciones integrales para espacios verdes de mediana y gran escala en espacios públicos, empresas o particulares. <br>
-            </br>
-            Los espacios verdes constituyen uno de los principales articuladores de la vida social. Son lugares de encuentro, de integración, promueven la diversidad cultural generan valor simbólico, identidad y pertenencia. Asimismo, contribuyen en la regulación hídrica y en la reducción del impacto de la ciudad o insdustria construida sobre el medio ambiente. Y ofrecen un ecosistema apropiado para la conservación de la biodiversidad.
+          Nos dedicamos a varias ramas orientados a los espacios verdes, unas de ellas son:
           </p>
         </div>
         <FeaturesMobile />
