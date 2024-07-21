@@ -40,27 +40,22 @@ const faqs = [
     summary:
       'En resumen, nuestra forma de trabajo se basa en la excelencia, la sostenibilidad y la satisfacción del cliente, con un enfoque especial en la creación de entornos que armonicen con la naturaleza y contribuyan positivamente al medio ambiente.'
   },
-    {
-      question:
-        'I found other companies called TaxPal, are you sure you can use this name?',
-      answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
-    },
+    
   ],
   [
     {
-      question: 'How do you generate reports?',
-      answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
+      
+        question: '¿Cómo garantizan la calidad en sus proyectos?',
+        answer: 'La calidad en nuestros proyectos se garantiza a través de una combinación de planificación detallada, selección de materiales de alta calidad y supervisión constante durante la ejecución. Nuestro equipo está compuesto por profesionales experimentados que se dedican a entregar resultados que superen las expectativas de nuestros clientes.',
+      
     },
     {
-      question: 'Can we expect more inventory features?',
-      answer: 'In life it’s really better to never expect anything at all.',
+      question: '¿Cuáles son los beneficios de contratar su empresa para la creación de parques y plazas?',
+      answer: 'Contratar nuestra empresa garantiza que obtendrás espacios recreativos bien diseñados, funcionales y estéticamente agradables. Nuestros diseños no solo mejoran el aspecto visual de las áreas, sino que también promueven la sostenibilidad y la integración con el entorno natural.',
     },
     {
-      question: 'I lost my password, how do I get into my account?',
-      answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+      question: '¿Cómo manejan los proyectos de mantenimiento a largo plazo?',
+      answer: 'Ofrecemos contratos de mantenimiento a largo plazo que incluyen servicios periódicos para garantizar que los espacios verdes se mantengan en óptimas condiciones. Nuestro equipo realiza visitas regulares y ajustes según sea necesario para asegurar la salud y belleza continuas del área.',
     },
   ],
 ]
@@ -85,7 +80,7 @@ export function Faqs() {
   id="faq-title"
   className="font-display text-3xl tracking-tight text-white sm:text-4xl"
 >
-  Preguntas frecuentes
+  PREGUNTAS FRECUENTES
 </h2>
 <p className="mt-4 text-lg tracking-tight text-white">
   Si no puede encontrar lo que busca, envíe un correo electrónico a nuestro equipo de soporte y, alguien se comunicará con usted.

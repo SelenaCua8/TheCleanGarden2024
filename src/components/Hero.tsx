@@ -64,11 +64,7 @@ export function Hero() {
               { name: 'Buquebus', "logo": logoBuquebus },
               { name: 'Asociación Argentina de Polo',"logo": logoPolo},
             ],
-            [
-              { name: 'Industrias Guidi', "logo": logoGuidi },
-              { name: 'Buquebus', "logo": logoBuquebus },
-              { name: 'Asociación Argentina de Polo',"logo": logoPolo},
-            ],
+            
           ].map((group, groupIndex) => (
             <li key={groupIndex}>
               <ul

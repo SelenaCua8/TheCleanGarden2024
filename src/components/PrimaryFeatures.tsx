@@ -6,7 +6,6 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-featuress.jpg'
 import equipamiento from '@/images/screenshots/equipamiento.jpg'
-
 import flexibilidad from '@/images/screenshots/flexibilidad.jpg'
 import capacitaciones from '@/images/screenshots/capacitaciones.jpg'
 import politicasCalidad from '@/images/screenshots/politicaCalidadAmbiente.jpg'
@@ -89,7 +88,7 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Por que elegirnos
+            ¿POR QUÉ ELEGIRNOS?
           </h2>
           
         </div>

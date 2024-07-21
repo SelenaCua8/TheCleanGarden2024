@@ -6,11 +6,11 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - TaxPal',
-    default: 'TaxPal - Accounting made simple for small businesses',
+    template: 'TheCleanGarden',
+    default: 'The Clean Garden',
   },
   description:
-    'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
+    'Empresa de mantenimiento y creación de espacios verdes',
 }
 
 const inter = Inter({
@@ -34,7 +34,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        'h-full scroll-smooth bg-white antialiased',
+        'h-full scroll-smooth bg-green antialiased',
         inter.variable,
         lexend.variable,
       )}
