@@ -88,9 +88,9 @@ function MobileNavigation() {
           leaveTo="opacity-0 scale-95"
         >
           <PopoverPanel className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-green p-4 text-lg tracking-tight text-green-600 shadow-xl ring-1 ring-green-500/90">
-            <MobileNavLink href="#features">Menu</MobileNavLink>
-            <MobileNavLink href="#aboutus">Nosotros</MobileNavLink>
-            <MobileNavLink href="#faq">Preguntas frecuentes</MobileNavLink>
+            <MobileNavLink href="/PrimaryFeatures">Menu</MobileNavLink>
+            <MobileNavLink href="/FourthFeatures">Nosotros</MobileNavLink>
+            <MobileNavLink href="/Faqs">Preguntas frecuentes</MobileNavLink>
             <hr className="m-2 border-green-500/70" />
             <MobileNavLink href="/login">Contacto</MobileNavLink>
           </PopoverPanel>
@@ -110,9 +110,9 @@ export function Header() {
           <Image src={theCleanGardenImage} alt="Descripción de la imagen" width={120} height={80} />
     </Link>
             <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#features">Menu</NavLink>
-              <NavLink href="#aboutus">Nosotros</NavLink>
-              <NavLink href="#faq">Preguntas frecuentes</NavLink>
+              <NavLink href="/PrimaryFeatures">Menu</NavLink>
+              <NavLink href="/FourthFeatures">Nosotros</NavLink>
+              <NavLink href="/Faqs">Preguntas frecuentes</NavLink>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">

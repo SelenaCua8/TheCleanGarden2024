@@ -16,13 +16,12 @@ const features = [
   {
     title: 'Políticas de calidad y ambiente',
     description:
-      "Las Políticas de Calidad y de Medio Ambiente fijan como objetivos prioritarios la mejora continua de productos y servicios, mediante una gestión óptima de los recursos técnicos y humanos a la vez que la protección del medio ambiente, evitando en la medida de lo posible los impactos ambientales significativos y mejorando estos aspectos de forma continuada. Estas proporcionan un marco de referencia para establecer y revisar los objetivos de la empresa." ,
+      "Las Políticas de Calidad y de Medio Ambiente fijan como objetivos prioritarios la mejora continua de productos y servicios, mediante una gestión óptima de los recursos técnicos y humanos a la vez que la protección del medio ambiente, evitando en la medida de lo posible los impactos ambientales significativos y mejorando estos aspectos de forma continuada. Estas proporcionan un marco de referencia para establecer y revisar los objetivos de la empresa.",
     image: politicasCalidad,
   },
   {
     title: 'Normas de certificación',
-    description:
-      "Normas ISO 9001:2015 y 14001:2015",
+    description: "Normas ISO 9001:2015 y 14001:2015",
     image: logoIso,
   },
   {
@@ -52,14 +51,12 @@ const features = [
 ]
 
 export function PrimaryFeatures() {
-  let [tabOrientation, setTabOrientation] = useState<'horizontal' | 'vertical'>(
-    'horizontal',
-  )
+  const [tabOrientation, setTabOrientation] = useState<'horizontal' | 'vertical'>('horizontal')
 
   useEffect(() => {
-    let lgMediaQuery = window.matchMedia('(min-width: 1024px)')
+    const lgMediaQuery = window.matchMedia('(min-width: 1024px)')
 
-    function onMediaQueryChange({ matches }: { matches: boolean }) {
+    const onMediaQueryChange = ({ matches }: { matches: boolean }) => {
       setTabOrientation(matches ? 'vertical' : 'horizontal')
     }
 
@@ -90,7 +87,6 @@ export function PrimaryFeatures() {
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
             ¿POR QUÉ ELEGIRNOS?
           </h2>
-          
         </div>
         <TabGroup
           className="mt-16 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"
@@ -146,11 +142,11 @@ export function PrimaryFeatures() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                    <div className="mt-10 max-w-full overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20">
                       <Image
-                        className="w-full"
+                        className="w-full h-auto object-cover"
                         src={feature.image}
-                        alt=""
+                        alt={feature.title}
                         priority
                         sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
                       />
