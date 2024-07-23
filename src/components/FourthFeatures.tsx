@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import fuentes from '@/images/screenshots/fuentes2.jpg';
 import sillasMesas from '@/images/screenshots/sillas-y-mesas.jpg';
 import jardinero from '@/images/screenshots/jardinero.jpg';
 import poda from '@/images/screenshots/poda-de-arboles.jpg';
