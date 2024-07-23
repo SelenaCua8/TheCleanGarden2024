@@ -89,8 +89,8 @@ function MobileNavigation() {
         >
           <PopoverPanel className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-green p-4 text-lg tracking-tight text-green-600 shadow-xl ring-1 ring-green-500/90">
             <MobileNavLink href="#features">Menu</MobileNavLink>
-            <MobileNavLink href="#testimonials">Nosotros</MobileNavLink>
-            <MobileNavLink href="#pricing">Preguntas frecuentes</MobileNavLink>
+            <MobileNavLink href="#aboutus">Nosotros</MobileNavLink>
+            <MobileNavLink href="#faq">Preguntas frecuentes</MobileNavLink>
             <hr className="m-2 border-green-500/70" />
             <MobileNavLink href="/login">Contacto</MobileNavLink>
           </PopoverPanel>

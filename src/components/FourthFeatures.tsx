@@ -10,7 +10,8 @@ export default function Example() {
       <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
           <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
-            <h2 className="text-3xl font-bold tracking-tight text-green-800 sm:text-4xl">¿QUIÉNES SOMOS?</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-green-800 sm:text-4xl"
+            id='aboutus'>¿QUIÉNES SOMOS?</h2>
             <p className="mt-6 text-xl leading-8 text-green-600">
               Somos una empresa con más de 20 años de experiencia orientados a dar soluciones integrales para espacios verdes de mediana y gran escala en espacios públicos, empresas o particulares.
             </p>
