@@ -1,17 +1,41 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import equipamiento from '@/images/screenshots/equipamiento.jpg'
+import { CarouselCustomArrows } from './Carrusel';
 
 const FifthFeatures = () => {
   const data = [
     {
+      link: CarouselCustomArrows ,
+      image: equipamiento,
+      comment: `Nos dedicamos al diseño y construcción de obras públicas como parques, juegos,`,
+    },
+    {
       link: 'add link here',
       image: 'https://img.freepik.com/icones-gratuites/photo_318-224222.jpg?t=st=1692184185~exp=1692184785~hmac=9574e270a720386c1cab75eb8df937f8a31e20fbfcfebe219b3c4dd3705bc975',
-      comment: `QUE TAN LARGO PRFHIURBFIUDBVIUDFNUIDNFVIBDNFIVB
-      DFJVBUDFVBIUBDFVUIBADSUIVBPDSIUVBFJIVBPIZBVIUFDVBI
-      UUFBVI
-      DFAIUVBIADFUVBIUDFVBUDFYVBFBVIUFBV DFVH FDV FV FVHDFHVF  FDV FV FV FV VF FD FVA VDS  ADS DFV F  AVD V
-       DV DFV DS  VDS DVS  <b>like this</b>`,
+      comment: `Somos la única empresa del país que nos dedicamos al cuidado de árboles 
+      realizando tomografía arboreal`,
+    },
+    {
+      link: 'add link here',
+      image: 'https://img.freepik.com/icones-gratuites/photo_318-224222.jpg?t=st=1692184185~exp=1692184785~hmac=9574e270a720386c1cab75eb8df937f8a31e20fbfcfebe219b3c4dd3705bc975',
+      comment: `Mantenimiento de espacios verdes`,
+    },
+    {
+      link: 'add link here',
+      image: 'https://img.freepik.com/icones-gratuites/photo_318-224222.jpg?t=st=1692184185~exp=1692184785~hmac=9574e270a720386c1cab75eb8df937f8a31e20fbfcfebe219b3c4dd3705bc975',
+      comment: `Sistema de riego`,
+    },
+    {
+      link: 'add link here',
+      image: 'https://img.freepik.com/icones-gratuites/photo_318-224222.jpg?t=st=1692184185~exp=1692184785~hmac=9574e270a720386c1cab75eb8df937f8a31e20fbfcfebe219b3c4dd3705bc975',
+      comment: `Obra pública`,
+    },
+    {
+      link: 'add link here',
+      image: 'https://img.freepik.com/icones-gratuites/photo_318-224222.jpg?t=st=1692184185~exp=1692184785~hmac=9574e270a720386c1cab75eb8df937f8a31e20fbfcfebe219b3c4dd3705bc975',
+      comment: `vivero propio`,
     },
     // ... Agrega los otros objetos aquí
   ];
@@ -20,7 +44,7 @@ const FifthFeatures = () => {
     <div className="">
       <div className="p-6 container mx-auto">
         <div className="py-2">
-          <h1 className="text-center text-4xl">My App</h1>
+          <h1 className="text-center text-4xl">Qué hacemos</h1>
         </div>
         <div className="md:grid md:gap-6 md:grid-cols-2 lg:grid-cols-3 mb-12">
           {data.map((x, index) => (
@@ -46,7 +70,7 @@ const FifthFeatures = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Visite Website
+                  Galeria de fotos
                 </Link>
               </div>
               <h3 className="font-medium text-xl leading-8">
