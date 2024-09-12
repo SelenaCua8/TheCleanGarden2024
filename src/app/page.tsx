@@ -16,13 +16,14 @@ export default function Home() {
       <main>
         <Hero />
         <FourthFeatures /> 
-        <ThirdFeatures />
+        
+        <FifthFeatures />
         <PrimaryFeatures />
 
         <Faqs />
       </main>
       <Footer />
-      <FifthFeatures />
+      
     </>
   )
 }
