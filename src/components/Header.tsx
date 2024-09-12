@@ -14,7 +14,7 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { NavLink } from '@/components/NavLink'
-import Image from 'next/image'; // Asegúrate de importar Image de la manera correcta
+import Image from 'next/image'; 
 
 import theCleanGardenImage from '@/images/logos/theCleanGarden.jpg';
 

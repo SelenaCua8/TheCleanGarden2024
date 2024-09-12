@@ -65,6 +65,7 @@ export function Hero() {
               { name: 'Asociación Argentina de Polo',"logo": logoPolo},
             ],
             
+            
           ].map((group, groupIndex) => (
             <li key={groupIndex}>
               <ul
