@@ -16,8 +16,7 @@ export default function Home() {
         <Hero />
         <FourthFeatures /> 
         <FifthFeatures />
-         {/* Aquí puedes agregar la galería de imágenes con el galleryId adecuado */}
-         <FeaturedImageGallery galleryId={1} /> {/* Cambia el galleryId según sea necesario */}
+        
         <PrimaryFeatures />
         <Faqs />
       </main>

@@ -1,5 +1,20 @@
-"use client"
+"use client";
 import React from "react";
+import construccion from '@/images/screenshots/construccionDeParque.jpg';
+import construccionUno from '@/images/screenshots/construccionDeParque1.jpg';
+import construccionDos from '@/images/screenshots/construccionUno.jpg';
+import construccionTres from '@/images/screenshots/construccionDos.jpg';
+import construccionCuatro from '@/images/screenshots/construccionTres.jpg';
+import sillasYmesas from '@/images/screenshots/sillas-y-mesas.jpg';
+import tomografia from '@/images/screenshots/tomografia.jpg';
+import tomografiaCinco from '@/images/screenshots/tomografiaCinco.jpg';
+import tomografiaSeis from '@/images/screenshots/tomografiaSeis.jpg';
+import tomografiaSiete from '@/images/screenshots/tomografiaSiete.jpg';
+import parque from '@/images/screenshots/parqueUno.jpg';
+import parqueUno from '@/images/screenshots/parqueDos.jpg';
+import parqueDos from '@/images/screenshots/parqueTres.jpg';
+import parqueTres from '@/images/screenshots/parqueCuatro.jpg';
+import parqueCuatro from '@/images/screenshots/parqueCinco.jpg';
 
 // Define el tipo de las galerías
 type Gallery = {
@@ -11,49 +26,40 @@ interface FeaturedImageGalleryProps {
   galleryId: number;
 }
 
+// Galerías de imágenes
 const galleries: { [key: number]: Gallery[] } = {
   1: [
-    { imgelink: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" },
+    { imgelink: construccion.src },
+    { imgelink: sillasYmesas.src },
+    { imgelink: construccionUno.src },
+    { imgelink: construccionDos.src },
+    { imgelink: construccionTres.src },
+    { imgelink: construccionCuatro.src },
   ],
   2: [
-    { imgelink: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" },
+    { imgelink: tomografia.src },
+    { imgelink: tomografiaCinco.src },
+    { imgelink: tomografiaSeis.src },
+    { imgelink: tomografiaSiete.src },
   ],
   3: [
-    { imgelink: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" },
+    { imgelink: parque.src },
+    { imgelink: parqueUno.src },
+    { imgelink: parqueDos.src },
+    { imgelink: parqueTres.src },
+    { imgelink: parqueCuatro.src },
   ],
-  4: [
-    { imgelink: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" },
-  ],
-  5: [
-    { imgelink: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80" },
-    { imgelink: "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" },
-  ],
+  4: [],
+  5: [],
 };
 
 export function FeaturedImageGallery({ galleryId }: FeaturedImageGalleryProps) {
-  const [active, setActive] = React.useState<string>(galleries[galleryId][0]?.imgelink || "");
+  // Verificamos si la galería existe y si tiene al menos una imagen
+  const gallery = galleries[galleryId] || [];
+  const [active, setActive] = React.useState<string>(gallery.length > 0 ? gallery[0].imgelink : "");
 
-  if (!galleries[galleryId]) {
-    return <p>Galería no encontrada.</p>;
+  if (gallery.length === 0) {
+    return <p>Galería no encontrada o sin imágenes.</p>;
   }
 
   return (
@@ -66,7 +72,7 @@ export function FeaturedImageGallery({ galleryId }: FeaturedImageGalleryProps) {
         />
       </div>
       <div className="grid grid-cols-5 gap-4">
-        {galleries[galleryId].map(({ imgelink }, index) => (
+        {gallery.map(({ imgelink }, index) => (
           <div key={index}>
             <img
               onClick={() => setActive(imgelink)}
