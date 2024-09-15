@@ -85,7 +85,7 @@ export default function Register() {
                 </dt>
                 <dd>
                   <a className="hover:text-gray-900" href="tel:+1 (555) 234-5678">
-                    +54 (11) 26017576
+                    +54 (11) 38410356
                   </a>
                 </dd>
               </div>
@@ -96,7 +96,7 @@ export default function Register() {
                 </dt>
                 <dd>
                   <a className="hover:text-gray-900" href="mailto:hello@example.com">
-                    TheCleanGarden@Gmail.com
+                    Tcgardenzte@Gmail.com
                   </a>
                 </dd>
               </div>
