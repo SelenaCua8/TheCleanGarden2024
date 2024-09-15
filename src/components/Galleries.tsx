@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import construccion from '@/images/screenshots/construccionDeParque.jpg';
-import construccionUno from '@images/screenshots/construcciondeParque1.jpg';
+
 import construccionDos from '@/images/screenshots/construccionUno.jpg';
 import construccionTres from '@/images/screenshots/construccionDos.jpg';
 import construccionCuatro from '@/images/screenshots/construccionTres.jpg';
@@ -31,7 +31,7 @@ const galleries: { [key: number]: Gallery[] } = {
   1: [
     { imgelink: construccion.src },
     { imgelink: sillasYmesas.src },
-    { imgelink: construccionUno.src },
+    
     { imgelink: construccionDos.src },
     { imgelink: construccionTres.src },
     { imgelink: construccionCuatro.src },
